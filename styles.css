@@ -1,8 +1,9 @@
-root {
+:root {
     --primary-color: #21233C;
-    --secondary-color: #59597F;
+    --secondary-color: #9191c8;
     --text-color: #151934;
     --accent-color: #435482;
+    --background-color: #c9c9ff;
     --spacing: 4px;
 }
 
@@ -11,7 +12,10 @@ root {
 }
 
 body {
+    margin: 0;
     font-family: Optima, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
     display: grid;
     grid-template-areas:
         "header"
@@ -20,6 +24,24 @@ body {
         "footer";
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
 .destination-name {
     font-family: 'Lucida Calligraphy', Geneva, Verdana, sans-serif;
+}
+
+.destination-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 12px;
+    border-radius: 50%;
 }
