@@ -30,11 +30,69 @@
         </section>
         <section id="packages-section">
             <h2>Travel Packages</h2>
-            table
+            <p>extra info about packages</p>
+            <table>
+                <caption>Travel Package Options</caption>
+                <tr>
+                    <th scope="col">Package</th>
+                    <th scope="col">Duration</th>
+                    <th scope="col">Price</th>
+                </tr>
+                <tr>
+                    <td>package 1</td>
+                    <td>duration 1</td>
+                    <td>price 1</td>
+                </tr>
+                <tr>
+                    <td>package 2</td>
+                    <td>duration 2</td>
+                    <td>price 2</td>
+                </tr>
+                <tr>
+                    <td>package 3</td>
+                    <td>duration 3</td>
+                    <td>price 3</td>
+                </tr>
+            </table>
         </section>
         <section id="contact-section">
             <h2>Contact</h2>
-            form
+            <form method="post">
+                <fieldset>
+                    <legend>Travel Package Inquiries</legend>
+                    <div>
+                        <label for="f-user-name">Name:</label>
+                        <input type="text" name="user-name" id="f-user-name">
+                    </div>
+                    <div>
+                        <label for="f-user-email">Email:</label>
+                        <input type="email" name="user-email" id="f-user-email">                        
+                    </div>
+                    <div>
+                        <label for="f-user-email">Email:</label>
+                        <input type="email" name="user-email" id="f-user-email">
+                    </div>
+                    <div>
+                        <label for="f-package">Travel package:</label>
+                        <select name="package-select" id="f-package">
+                            <option>
+                                package 1
+                            </option>
+                            <option>
+                                package 2
+                            </option>
+                            <option>
+                                package 3
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="f-comments">Questions/comments about package:</label>
+                        <textarea name="comments" id="f-comments"></textarea>
+                    </div>
+                    <input type="submit">
+                </fieldset>
+            </form>
         </section>
     </main>
     <footer>
