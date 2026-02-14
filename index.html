@@ -75,7 +75,7 @@
             <h2>Contact</h2>
             <form method="post">
                 <fieldset>
-                    <legend>Travel Package Inquiries</legend>
+                    <legend>Personal Information</legend>
                     <div>
                         <label for="f-user-name">Name:</label>
                         <input type="text" name="user-name" id="f-user-name">
@@ -84,35 +84,32 @@
                         <label for="f-user-email">Email:</label>
                         <input type="email" name="user-email" id="f-user-email">                        
                     </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Travel Package Inquiries</legend>
                     <div>
                         <label for="f-package">Travel package:</label>
                         <select name="package-select" id="f-package">
-                            <option>
-                                Gazer's Getaway - 1 bed
-                            </option>
-                            <option>
-                                Gazer's Getaway - 2 beds
-                            </option>
-                            <option>
-                                Telescopist's Trip - 1 bed
-                            </option>
-                            <option>
-                                Telescopist's Trip - 2 beds
-                            </option>
-                            <option>
-                                Astronomer's Adventure - 1 bed
-                            </option>
-                            <option>
-                                Astronomer's Adventure - 2 beds
-                            </option>
+                            <option selected="true" disabled="disabled" value="">Choose Package</option>
+                            <option value="Gazer's Getaway">Gazer's Getaway</option>
+                            <option value="Telescopist's Trip">Telescopist's Trip</option>
+                            <option value="Astronomer's Adventure">Astronomer's Adventure</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="f-room">Room type:</label>
+                        <select name="room-select" id="f-room">
+                            <option selected="true" disabled="disabled" value="">Choose Type</option>
+                            <option value="1 bed">1 bed</option>
+                            <option value="2 beds">2 beds</option>
                         </select>
                     </div>
                     <div>
                         <label for="f-comments">Questions/comments about package:</label>
                         <textarea name="comments" id="f-comments"></textarea>
                     </div>
-                    <input type="submit">
                 </fieldset>
+                <input type="submit">
             </form>
         </section>
     </main>
