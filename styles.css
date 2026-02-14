@@ -5,3 +5,21 @@ root {
     --accent-color: #435482;
     --spacing: 4px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Optima, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+.destination-name {
+    font-family: 'Lucida Calligraphy', Geneva, Verdana, sans-serif;
+}
