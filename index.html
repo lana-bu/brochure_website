@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Twinkling Meadows Brochure</title>
     <meta name="description" content="Get information on the Twinkling Meadows stargazing destination and select between travel package options.">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
             <h2>About</h2>
             <img 
                 class="destination-image"
-                src="pexels-pixabay-433155.jpg" 
+                src="/images/pexels-pixabay-433155.jpg" 
                 alt="a starry night sky with the Milky Way Galaxy visible above a grassy meadow"
             >
             <p>Twinkling Meadows is a stargazer's paradise!</p>
@@ -73,23 +74,23 @@
         </section>
         <section id="contact-section">
             <h2>Contact</h2>
-            <form method="post">
+            <form action="#" method="get">
                 <fieldset>
                     <legend>Personal Information</legend>
                     <div>
                         <label for="f-user-name">Name:</label>
-                        <input type="text" name="user-name" id="f-user-name">
+                        <input type="text" name="user-name" id="f-user-name" required="required">
                     </div>
                     <div>
                         <label for="f-user-email">Email:</label>
-                        <input type="email" name="user-email" id="f-user-email">                        
+                        <input type="email" name="user-email" id="f-user-email" required="required">                        
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Travel Package Inquiries</legend>
                     <div>
                         <label for="f-package">Travel package:</label>
-                        <select name="package-select" id="f-package">
+                        <select name="package-select" id="f-package" required="required">
                             <option selected="true" disabled="disabled" value="">Choose Package</option>
                             <option value="Gazer's Getaway">Gazer's Getaway</option>
                             <option value="Telescopist's Trip">Telescopist's Trip</option>
@@ -98,7 +99,7 @@
                     </div>
                     <div>
                         <label for="f-room">Room type:</label>
-                        <select name="room-select" id="f-room">
+                        <select name="room-select" id="f-room" required="required">
                             <option selected="true" disabled="disabled" value="">Choose Type</option>
                             <option value="1 bed">1 bed</option>
                             <option value="2 beds">2 beds</option>
@@ -106,7 +107,7 @@
                     </div>
                     <div>
                         <label for="f-comments">Questions/comments about package:</label>
-                        <textarea name="comments" id="f-comments"></textarea>
+                        <textarea name="comments" id="f-comments" required="required"></textarea>
                     </div>
                 </fieldset>
                 <input type="submit">
