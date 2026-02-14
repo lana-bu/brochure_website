@@ -26,32 +26,48 @@
                 src="pexels-pixabay-433155.jpg" 
                 alt="a starry night sky with the Milky Way Galaxy visible above a grassy meadow"
             >
-            <p>about info</p>
+            <p>Twinkling Meadows is a stargazer's paradise!</p>
         </section>
         <section id="packages-section">
             <h2>Travel Packages</h2>
             <p>extra info about packages</p>
             <table>
                 <caption>Travel Package Options</caption>
-                <tr>
+                <tr rowspan="2">
                     <th scope="col">Package</th>
                     <th scope="col">Duration</th>
+                    <th scope="col">Room Type</th>
                     <th scope="col">Price</th>
                 </tr>
                 <tr>
-                    <td>package 1</td>
-                    <td>duration 1</td>
-                    <td>price 1</td>
+                    <td rowspan="2">Gazer's Getaway</td>
+                    <td rowspan="2">2 nights</td>
+                    <td>1 full bed</td>
+                    <td>$200</td>
                 </tr>
                 <tr>
-                    <td>package 2</td>
-                    <td>duration 2</td>
-                    <td>price 2</td>
+                    <td>2 full beds</td>
+                    <td>$370</td>
                 </tr>
                 <tr>
-                    <td>package 3</td>
-                    <td>duration 3</td>
-                    <td>price 3</td>
+                    <td rowspan="2">Telescopist's Trip</td>
+                    <td rowspan="2">4 nights</td>
+                    <td>1 full bed</td>
+                    <td>$380</td>
+                </tr>
+                <tr>
+                    <td>2 full beds</td>
+                    <td>$720</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Astronomer's Adventure</td>
+                    <td rowspan="2">7 nights</td>
+                    <td>1 full bed</td>
+                    <td>$650</td>
+                </tr>
+                <tr>
+                    <td>2 full beds</td>
+                    <td>$1,270</td>
                 </tr>
             </table>
         </section>
@@ -69,20 +85,25 @@
                         <input type="email" name="user-email" id="f-user-email">                        
                     </div>
                     <div>
-                        <label for="f-user-email">Email:</label>
-                        <input type="email" name="user-email" id="f-user-email">
-                    </div>
-                    <div>
                         <label for="f-package">Travel package:</label>
                         <select name="package-select" id="f-package">
                             <option>
-                                package 1
+                                Gazer's Getaway - 1 bed
                             </option>
                             <option>
-                                package 2
+                                Gazer's Getaway - 2 beds
                             </option>
                             <option>
-                                package 3
+                                Telescopist's Trip - 1 bed
+                            </option>
+                            <option>
+                                Telescopist's Trip - 2 beds
+                            </option>
+                            <option>
+                                Astronomer's Adventure - 1 bed
+                            </option>
+                            <option>
+                                Astronomer's Adventure - 2 beds
                             </option>
                         </select>
                     </div>
