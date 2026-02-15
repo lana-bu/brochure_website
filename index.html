@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="main-header">
+    <header>
         <h1 class="destination-name desination-name-large">Twinkling Meadows</h1>
         <nav>
             <ul>
@@ -20,7 +20,7 @@
         </nav>
     </header>
     <main>
-        <section id="about-section">
+        <section id="about-section" class="content-section">
             <h2>About</h2>
             <img 
                 class="destination-image"
@@ -62,7 +62,7 @@
                 soon!
             </p>
         </section>
-        <section id="packages-section">
+        <section id="packages-section" class="content-section">
             <h2>Travel Packages</h2>
             <p>
                 Each travel package includes one room in our on-site hotel. Each room has a full bathroom,
@@ -74,13 +74,13 @@
                 required will need to be purchased at the hotel's front desk. Complimentary refreshments like
                 water, coffee, and tea are available for free all day to guests.
             </p>
-            <table>
-                <caption>Travel Package Options</caption>
+            <table class="packages-table">
+                <caption class="table-title">Travel Package Options</caption>
                 <tr rowspan="2">
-                    <th scope="col">Package</th>
-                    <th scope="col">Duration</th>
-                    <th scope="col">Room Type</th>
-                    <th scope="col">Price</th>
+                    <th scope="col" class="column-header">Package</th>
+                    <th scope="col" class="column-header">Duration</th>
+                    <th scope="col" class="column-header">Room Type</th>
+                    <th scope="col" class="column-header">Price</th>
                 </tr>
                 <tr>
                     <td rowspan="2">Gazer's Getaway</td>
@@ -114,25 +114,25 @@
                 </tr>
             </table>
         </section>
-        <section id="contact-section">
+        <section id="contact-section" class="content-section">
             <h2>Contact</h2>
-            <form action="#" method="get">
+            <form action="#" method="get"> <!-- if site were fully functional, would use POST to send to php file for processing -->
                 <fieldset>
                     <legend>Personal Information</legend>
                     <div>
                         <label for="f-user-name">Name:</label>
-                        <input type="text" name="user-name" id="f-user-name" required="required">
+                        <input type="text" name="user-name" id="f-user-name" required="required" class="form-input">
                     </div>
                     <div>
                         <label for="f-user-email">Email:</label>
-                        <input type="email" name="user-email" id="f-user-email" required="required">                        
+                        <input type="email" name="user-email" id="f-user-email" required="required" class="form-input">                        
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Travel Package Inquiries</legend>
                     <div>
                         <label for="f-package">Travel package:</label>
-                        <select name="package-select" id="f-package" required="required">
+                        <select name="package-select" id="f-package" required="required" class="form-input">
                             <option selected="true" disabled="disabled" value="">Choose Package</option>
                             <option value="Gazer's Getaway">Gazer's Getaway</option>
                             <option value="Telescopist's Trip">Telescopist's Trip</option>
@@ -141,7 +141,7 @@
                     </div>
                     <div>
                         <label for="f-room">Room type:</label>
-                        <select name="room-select" id="f-room" required="required">
+                        <select name="room-select" id="f-room" required="required" class="form-input">
                             <option selected="true" disabled="disabled" value="">Choose Type</option>
                             <option value="1 bed">1 bed</option>
                             <option value="2 beds">2 beds</option>
@@ -149,10 +149,10 @@
                     </div>
                     <div>
                         <label for="f-comments">Questions/comments about package:</label>
-                        <textarea name="comments" id="f-comments" required="required"></textarea>
+                        <textarea name="comments" id="f-comments" required="required" class="form-input"></textarea>
                     </div>
                 </fieldset>
-                <input type="submit">
+                <input type="submit" class="btn">
             </form>
         </section>
     </main>

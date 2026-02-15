@@ -2,7 +2,8 @@
     --primary-color: #21233C;
     --secondary-color: #9191c8;
     --text-color: #151934;
-    --accent-color: #435482;
+    --accent-color-1: #93b0ff;
+    --accent-color-2: #ebb28f;
     --background-color: #c9c9ff;
     --spacing: 4px;
 }
@@ -14,6 +15,7 @@
 body {
     margin: 0;
     font-family: Optima, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
     color: var(--text-color);
     background-color: var(--background-color);
     display: grid;
@@ -38,10 +40,56 @@ footer {
     font-family: 'Lucida Calligraphy', Geneva, Verdana, sans-serif;
 }
 
+fix .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
 .destination-image {
-    max-width: 50%;
+    width: 40%;
+    max-width: 3400px;
     height: auto;
     display: block;
-    margin-top: 12px;
     border-radius: 50%;
+}
+
+.content-section {
+    
+}
+
+.table-title{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.column-header {
+    background-color: var(--secondary-color);
+}
+
+.form-input {
+    background-color: var(--accent-color-1);
+    color: var(--text-color)
+}
+
+.btn {
+    background-color: var(--accent-color-2);
+    color: var(--text-color);
+}
+
+/* mobile portrait layout (479px or less) is default styles given above */
+
+/* mobile landscape layout (480px to 767px) */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* tablet layout (768px to 1023px) */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* desktop layout (1024px or more) */
+@media only screen and (min-width: 480px) {
+
 }
