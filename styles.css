@@ -1,11 +1,12 @@
 :root {
     --primary-color: #21233C;
     --secondary-color: #9191c8;
+    --secondary-color-translucent: #9191c858;
     --text-color: #151934;
     --accent-color-1: #93b0ff;
     --accent-color-2: #ebb28f;
     --background-color: #c9c9ff;
-    --spacing: 4px;
+    --spacing: 0.5em;
 }
 
 * {
@@ -38,24 +39,46 @@ footer {
 
 .destination-name {
     font-family: 'Lucida Calligraphy', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: var(--spacing);
 }
 
-fix .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+.destination-name-large {
+    font-size: 2em;
+}
+
+.nav-bar li {
+    /* display: inline; gets rid of bullets too */
+}
+
+.nav-bar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.content-section {
+    padding: 0 var(--spacing);
+}
+
+.section-title {
+    text-align: center;
+}
 
 .destination-image {
-    width: 40%;
+    width: 100%;
     max-width: 3400px;
     height: auto;
     display: block;
     border-radius: 50%;
 }
 
-.content-section {
-    
+.packages-table {
+    font-size: 0.6em;
+    border: 3px solid var(--primary-color);
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .table-title{
@@ -63,13 +86,57 @@ fix .topnav a:not(:first-child) {display: none;}
     font-size: 1.2em;
 }
 
+.packages-table th {
+    border: 2px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding: var(--spacing);
+}
+
+.packages-table td {
+    border: 1px solid var(--primary-color);
+    padding: 0.1em;    
+}
+
+.packages-table tr:nth-child(odd) {
+    background-color: var(--secondary-color-translucent);
+}
+
 .column-header {
     background-color: var(--secondary-color);
 }
 
+.inquiry-form fieldset{
+    border: 2px solid var(--secondary-color);
+    margin: var(--spacing);
+    font-size: 0.75em;
+}
+
+.inquiry-form legend {
+    font-weight: bold;
+}
+
+.label {
+    display: inline-block;
+    padding: 0.2em;
+}
+
+.personal-info-label {
+    width: 20%;
+}
+
 .form-input {
+    display: inline-block;
+    padding: 0.1em;
+    margin: 0.2em;
+    border: 2px solid var(--primary-color);
     background-color: var(--accent-color-1);
-    color: var(--text-color)
+    color: var(--text-color);
+    font-size: 0.8em;
+    font-family: Optima, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.form-input:focus {
+    outline: 2px solid var(--secondary-color);
 }
 
 .btn {
@@ -81,15 +148,26 @@ fix .topnav a:not(:first-child) {display: none;}
 
 /* mobile landscape layout (480px to 767px) */
 @media only screen and (min-width: 480px) {
-
+    #toggle {
+        display: none;
+    }
 }
 
 /* tablet layout (768px to 1023px) */
-@media only screen and (min-width: 480px) {
-
+@media only screen and (min-width: 768px) {
+    #toggle {
+        display: none;
+    }
 }
 
 /* desktop layout (1024px or more) */
-@media only screen and (min-width: 480px) {
-
+@media only screen and (min-width: 1024px) {
+    #toggle {
+        display: none;
+    }
+    
+    .destination-image {
+    width: 50%;
+    float: right;
+}
 }
