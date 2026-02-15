@@ -2,9 +2,11 @@
     --primary-color: #21233C;
     --secondary-color: #9191c8;
     --secondary-color-translucent: #9191c858;
+    --secondary-color-dark: #5b5b93;
     --text-color: #151934;
+    --reverse-text-color: #e2e5ff;
     --accent-color-1: #93b0ff;
-    --accent-color-2: #ebb28f;
+    --accent-color-2: #9961a5;
     --background-color: #c9c9ff;
     --spacing: 0.5em;
 }
@@ -30,11 +32,15 @@ body {
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    padding: var(--spacing);
+    margin-bottom: var(--spacing);
 }
 
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    padding: var(--spacing);
+    margin-top: var(--spacing);
 }
 
 .destination-name {
@@ -83,7 +89,8 @@ footer {
 
 .table-title{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.6em;
+    margin: var(--spacing);
 }
 
 .packages-table th {
@@ -105,6 +112,11 @@ footer {
     background-color: var(--secondary-color);
 }
 
+.inquiry-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .inquiry-form fieldset{
     border: 2px solid var(--secondary-color);
     margin: var(--spacing);
@@ -115,17 +127,16 @@ footer {
     font-weight: bold;
 }
 
+.form-input-group {
+    display: flex;
+    padding: 0.1em;
+;}
+
 .label {
-    display: inline-block;
     padding: 0.2em;
 }
 
-.personal-info-label {
-    width: 20%;
-}
-
 .form-input {
-    display: inline-block;
     padding: 0.1em;
     margin: 0.2em;
     border: 2px solid var(--primary-color);
@@ -139,9 +150,34 @@ footer {
     outline: 2px solid var(--secondary-color);
 }
 
+.form-option:disabled {
+    color: var(--secondary-color-dark);
+}
+
+/* not supported by many browsers */
+.form-option:hover {
+    background-color: var(--secondary-color);
+}
+
+.comments-group {
+    flex-direction: column;
+}
+
+.comments-input {
+    height: 10em;
+    font-size: 1em;
+}
+
 .btn {
+    border: none;
+    border-radius: 6%;
     background-color: var(--accent-color-2);
-    color: var(--text-color);
+    color: var(--reverse-text-color);
+    font-family: Optima, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: var(--spacing);
+    margin: var(--spacing);
+    align-self: center;
 }
 
 /* mobile portrait layout (479px or less) is default styles given above */

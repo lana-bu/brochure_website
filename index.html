@@ -120,37 +120,37 @@
             <form action="#" method="get" class="inquiry-form"> <!-- if site were fully functional, would use POST to send to php file for processing -->
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <div>
-                        <label for="f-user-name" class="label personal-info-label">Name:</label>
+                    <div class="form-input-group">
+                        <label for="f-user-name" class="label">Name:</label>
                         <input type="text" name="user-name" id="f-user-name" required="required" class="form-input">
                     </div>
-                    <div>
-                        <label for="f-user-email" class="label personal-info-label">Email:</label>
+                    <div class="form-input-group">
+                        <label for="f-user-email" class="label">Email:</label>
                         <input type="email" name="user-email" id="f-user-email" required="required" class="form-input">                        
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Travel Package Inquiries</legend>
-                    <div>
-                        <label for="f-package" class="label inquiries-label">Travel package:</label>
+                    <div class="form-input-group">
+                        <label for="f-package" class="label">Travel package:</label>
                         <select name="package-select" id="f-package" required="required" class="form-input">
-                            <option selected="true" disabled="disabled" value="">Choose Package</option>
-                            <option value="Gazer's Getaway">Gazer's Getaway</option>
-                            <option value="Telescopist's Trip">Telescopist's Trip</option>
-                            <option value="Astronomer's Adventure">Astronomer's Adventure</option>
+                            <option selected="true" disabled="disabled" value="" class="form-option">Choose Package</option>
+                            <option value="Gazer's Getaway" class="form-option">Gazer's Getaway</option>
+                            <option value="Telescopist's Trip" class="form-option">Telescopist's Trip</option>
+                            <option value="Astronomer's Adventure" class="form-option">Astronomer's Adventure</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="f-room" class="label inquiries-label">Room type:</label>
+                    <div class="form-input-group">
+                        <label for="f-room" class="label">Room type:</label>
                         <select name="room-select" id="f-room" required="required" class="form-input">
-                            <option selected="true" disabled="disabled" value="">Choose Type</option>
-                            <option value="1 bed">1 bed</option>
-                            <option value="2 beds">2 beds</option>
+                            <option selected="true" disabled="disabled" value="" class="form-option">Choose Type</option>
+                            <option value="1 bed" class="form-option">1 bed</option>
+                            <option value="2 beds" class="form-option">2 beds</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="f-comments" class="label inquiries-label">Questions/comments about package:</label>
-                        <textarea name="comments" id="f-comments" required="required" class="form-input"></textarea>
+                    <div class="form-input-group comments-group">
+                        <label for="f-comments" class="label">Questions/comments about package:</label>
+                        <textarea name="comments" id="f-comments" required="required" class="form-input comments-input"></textarea>
                     </div>
                 </fieldset>
                 <input type="submit" class="btn">
