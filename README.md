@@ -12,3 +12,4 @@ This is my Project #1 assignment for my CIS 435 (Web Technology) course at UM-De
 ### Images
 - Night sky photo by Pixabay from Pexels: https://www.pexels.com/photo/milky-way-galaxy-433155/
 - Compass rose image (favicon): https://www.pngitem.com/middle/bmmhoo_transparent-background-compass-star-icon-hd-png-download/
+- Menu icon symbol: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%239191c8
