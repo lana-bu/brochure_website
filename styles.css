@@ -35,9 +35,10 @@ header {
 }
 
 nav {
-    background-color: var(--primary-color);
     position: sticky;
     top: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -61,9 +62,65 @@ footer {
     font-size: 2em;
 }
 
-nav a {
-    color: var(--secondary-color);
+#toggle {
+    display: none;
+}
+
+.menu-hamburger {
+    display: flex; /*none for others*/
+    cursor: pointer;
+    margin-left: auto;
+    padding: var(--spacing);
+    z-index: 1;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 1px solid var(--background-color);
+    margin-top: var(--spacing);
+    margin-right: var(--spacing);
+}
+
+.hamburger {
+    height: 1.3em;
+}
+
+.menu-container {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    background-color: var(--primary-color);
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#toggle:checked + .menu-hamburger + .menu-container {
+    height: 100%;
+}
+
+.menu {
+    position: relative;
+    display: inline;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.menu li {
+    font-size: 1.5em;
+    padding: var(--spacing);
+    transition: 0.3s;
+}
+
+.menu a {
+    color: var(--background-color);
     text-decoration: none;
+    transition: 1s;
+}
+
+.menu a:hover, .menu a:focus{
+    text-decoration: underline;
 }
 
 .content-section {
