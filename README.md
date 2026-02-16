@@ -12,6 +12,7 @@ This is my Project #1 assignment for my CIS 435 (Web Technology) course at UM-De
 - Overlay menu for mobile: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 - Toggle menu with checkbox: https://dev.to/hexshift/creating-a-fully-responsive-navigation-bar-using-only-css-no-javascript-1l3n
 - Grid layout where first object spans two columns: https://stackoverflow.com/questions/44401674/how-to-create-a-css-grid-layout-box-that-spans-2-columns-and-2-rows
+- Image file path fix (to load properly in GitHub Pages): https://youtu.be/K942H-5MW4w?si=hrhS5V95WCFGamt5&t=348
 ### Images
 - Night sky photo by Pixabay from Pexels: https://www.pexels.com/photo/milky-way-galaxy-433155/
 - Compass rose image (favicon): https://www.pngitem.com/middle/bmmhoo_transparent-background-compass-star-icon-hd-png-download/
