@@ -11,6 +11,7 @@ This is my Project #1 assignment for my CIS 435 (Web Technology) course at UM-De
 - When to use `em` or `rem`: https://medium.com/@rinai/should-you-use-em-or-rem-in-css-a-practical-developers-perspective-e6acb279d479
 - Overlay menu for mobile: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 - Toggle menu with checkbox: https://dev.to/hexshift/creating-a-fully-responsive-navigation-bar-using-only-css-no-javascript-1l3n
+- Grid layout where first object spans two columns: https://stackoverflow.com/questions/44401674/how-to-create-a-css-grid-layout-box-that-spans-2-columns-and-2-rows
 ### Images
 - Night sky photo by Pixabay from Pexels: https://www.pexels.com/photo/milky-way-galaxy-433155/
 - Compass rose image (favicon): https://www.pngitem.com/middle/bmmhoo_transparent-background-compass-star-icon-hd-png-download/
