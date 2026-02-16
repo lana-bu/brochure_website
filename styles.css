@@ -7,6 +7,7 @@
     --reverse-text-color: #e2e5ff;
     --accent-color-1: #93b0ff;
     --accent-color-2: #9961a5;
+    --accent-color-2-light: #bf7fce;
     --background-color: #c9c9ff;
     --spacing: 0.5em;
 }
@@ -132,6 +133,10 @@ footer {
     padding: 0 var(--spacing);
 }
 
+.content-section a {
+    color: var(--accent-color-2);
+}
+
 .section-title {
     text-align: center;
 }
@@ -244,6 +249,14 @@ footer {
     padding: var(--spacing);
     margin: var(--spacing);
     align-self: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    background-color: var(--accent-color-2-light);
 }
 
 /* mobile portrait layout (479px or less) is default styles given above */
