@@ -30,6 +30,10 @@ body {
 
 header {
     background-color: var(--primary-color);
+    background-image: url(images/pexels-pixabay-433155-stars-only.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    opacity: 0.9;
     color: var(--secondary-color);
     padding: var(--spacing);
 }
@@ -39,6 +43,7 @@ nav {
     top: 0;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(var(--primary-color), rgba(0, 0, 0, 0))
 }
 
 main {
