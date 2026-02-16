@@ -34,7 +34,7 @@ header {
     background-image: url(images/pexels-pixabay-433155-stars-only.jpg);
     background-blend-mode: multiply;
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.92;
     color: var(--secondary-color);
     padding: var(--spacing);
 }
@@ -73,7 +73,7 @@ footer {
 }
 
 .menu-hamburger {
-    display: flex; /*none for others*/
+    display: flex;
     cursor: pointer;
     margin-left: auto;
     padding: var(--spacing);
@@ -90,47 +90,32 @@ footer {
 }
 
 .menu-container {
-    height: 0;
-    width: 100%;
-    position: fixed;
-    z-index: -1;
-    top: 0;
     background-color: var(--primary-color);
     opacity: 0.9;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-#toggle:checked + .menu-hamburger + .menu-container {
-    height: 100%;
 }
 
 .menu {
-    position: relative;
-    display: inline;
-    top: 30%;
-    width: 100%;
     text-align: center;
+    display: flex;
 }
 
 .menu li {
-    font-size: 1.5em;
-    padding: var(--spacing);
-    transition: 0.3s;
+    display: inline-block;
+    flex: 1;
+    padding: 0 var(--spacing);
 }
 
 .menu a {
     color: var(--background-color);
     text-decoration: none;
-    transition: 1s;
 }
 
-.menu a:hover, .menu a:focus{
+.menu a:hover {
     text-decoration: underline;
 }
 
 .content-section {
-    padding: 0 var(--spacing);
+    padding: var(--spacing);
 }
 
 .content-section a {
@@ -259,12 +244,54 @@ footer {
     background-color: var(--accent-color-2-light);
 }
 
-/* mobile portrait layout (479px or less) is default styles given above */
+/* mobile portrait layout (479px or less */
+@media only screen and (max-width: 479px) {
+    .menu-container {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .menu {
+        position: relative;
+        display: inline;
+        top: 30%;
+        width: 100%;
+    }
+
+    .menu li {
+        display: block;
+        font-size: 1.5em;
+        padding: var(--spacing);
+        transition: 0.3s;
+    }
+
+    #toggle:checked + .menu-hamburger + .menu-container {
+        height: 100%;
+    }
+}
+
 
 /* mobile landscape layout (480px to 767px) */
 @media only screen and (min-width: 480px) {
-    #toggle {
+    .menu-hamburger {
         display: none;
+    }
+
+    .content-section {
+        padding: 2.5em var(--spacing) 0;
+    }
+
+    .inquiry-form fieldset{
+        font-size: 1.2em;
+    }
+
+    .packages-table {
+        font-size: 1em;
     }
 }
 
@@ -273,16 +300,10 @@ footer {
     nav li {
         /* display: inline; gets rid of bullets too */
     }
-    #toggle {
-        display: none;
-    }
 }
 
 /* desktop layout (1024px or more) */
 @media only screen and (min-width: 1024px) {
-    #toggle {
-        display: none;
-    }
     
     .destination-image {
     width: 50%;
